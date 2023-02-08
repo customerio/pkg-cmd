@@ -1,6 +1,6 @@
 {
   "name": "pkg-cmd",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Set of scripts to help with common package tasks. Supports Node and Go.",
   "bin": "./dist/index.js",
   "author": "Customer.io (https://customer.io)",
