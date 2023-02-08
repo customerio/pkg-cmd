@@ -10,7 +10,7 @@
     "lint": "./dist/index.js lint",
     "test": "./dist/index.js test",
     "format": "./dist/index.js format .",
-    "release": "npm run build && ./dist/index.js release"
+    "release": "npm run build && ./dist/index.js release --no-tests"
   },
   "dependencies": {
     "alex": "^11.0.0",
