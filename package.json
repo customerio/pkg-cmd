@@ -1,11 +1,11 @@
 {
   "name": "pkg-cmd",
   "version": "0.0.0",
-  "description": "Set of scripts to help with common package tasks. Supports Node and Go.",
+  "description": "Centralized tooling for common package scripts. Supports Node and Go.",
   "bin": "./dist/index.js",
   "author": "Customer.io (https://customer.io)",
   "scripts": {
-    "build": "esbuild src/index.ts --outdir=./dist --platform=node --bundle",
+    "build": "esbuild ./src --outdir=./dist --platform=node",
     "exec": "./dist/index.js exec",
     "lint": "./dist/index.js lint",
     "test": "./dist/index.js test",
@@ -15,7 +15,6 @@
   "dependencies": {
     "alex": "^11.0.0",
     "commander": "^10.0.0",
-    "esbuild": "^0.17.6",
     "eslint": "^8.33.0",
     "execa": "^6.1.0",
     "inquirer": "^9.1.4",
@@ -26,7 +25,8 @@
     "np": "^7.6.3",
     "parse-git-config": "^3.0.0",
     "prettier": "^2.8.3",
-    "spdx-license-list": "^6.6.0"
+    "spdx-license-list": "^6.6.0",
+    "tsup": "^6.6.0"
   },
   "license": "MIT",
   "devDependencies": {
