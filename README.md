@@ -1,6 +1,6 @@
 # pkg-cmd
 
-> Set of scripts to help with common package tasks. Supports Node and Go.
+> Centralized tooling for common package scripts. Supports Node and Go.
 
 ## Install
 
@@ -25,6 +25,18 @@ This will start an interactive prompt to help you set up your package.
 ### `pkg-cmd init`
 
 Starts an interactive prompt to help you set up your package.
+
+### `pkg-cmd build`
+
+Runs tsup and generates typescript types.
+
+### `pkg-cmd exec`
+
+Runs tsup and immediately executes the output.
+
+### `pkg-cmd dev`
+
+Runs tsup and immediately executes the output. Reruns on changes.
 
 ### `pkg-cmd format`
 

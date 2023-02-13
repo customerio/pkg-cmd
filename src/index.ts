@@ -12,6 +12,27 @@ program
   .action(require("./cmds/init").default);
 
 /**
+ * Build
+ */
+program.command("build <options>", "Build your project", {
+  executableFile: "../bash-cmds/build",
+});
+
+/**
+ * Dev
+ */
+program.command("dev <options>", "Run your project in development mode", {
+  executableFile: "../bash-cmds/dev",
+});
+
+/**
+ * Exec
+ */
+program.command("exec <options>", "Execute your project", {
+  executableFile: "../bash-cmds/exec",
+});
+
+/**
  * Format
  */
 program.command("format <options>", "Format your files", {
